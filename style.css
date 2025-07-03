@@ -1,0 +1,20 @@
+body {
+    display: grid;
+    grid-template: 40% 60% / 1fr repeat(4, 15%) 1fr;
+    height: 100vh;
+}
+#Information {
+    grid-area: 1/2/2/6;
+}
+#Box-Day {
+    grid-area: 2/2/3/3;
+}
+#Box-Hour {
+    grid-area: 2/3/3/4;
+}
+#Box-Minute {
+    grid-area: 2/4/3/5;
+}
+#Box-Second {
+    grid-area: 2/5/3/6;
+}
