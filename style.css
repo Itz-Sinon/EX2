@@ -1,20 +1,64 @@
+:root {
+  --base-backgroundcolor: #06080f;
+  --base-textcolor: #c8c5c6;
+  --base-input-backgroundcolor: #0e1729;
+  --base-btn-backgroundcolor:#38bdf8;
+  --base-textfont: 20px;
+}
+.montserrat {
+  font-family: "Montserrat", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 600;
+  font-style: normal;
+}
 body {
     display: grid;
-    grid-template: 40% 60% / 1fr repeat(4, 15%) 1fr;
-    height: 100vh;
+    grid-template: 35% 65% / 1fr repeat(4, 15%) 1fr;
+    background-color: var(--base-backgroundcolor);
+    color: var(--base-textcolor);
+    font-size: var(--base-textfont);
 }
 #Information {
     grid-area: 1/2/2/6;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+#Information h3 {
+    margin-top: -10px;
 }
 #Box-Day {
     grid-area: 2/2/3/3;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: 40px;
 }
 #Box-Hour {
     grid-area: 2/3/3/4;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: 40px;
 }
 #Box-Minute {
-    grid-area: 2/4/3/5;
+    grid-area: 2/4/3/5;display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: 40px;
 }
 #Box-Second {
-    grid-area: 2/5/3/6;
+    grid-area: 2/5/3/6;display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: 40px;
+}
+
+p {
+    margin-top: -20px;
 }

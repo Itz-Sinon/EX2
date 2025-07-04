@@ -12,10 +12,17 @@ function getTime() {
   const newM = (newH - Math.floor(newH)) * 60;
   const newS = (newM - Math.floor(newM)) * 60;
 
-  document.getElementById("Day").innerHTML = Math.floor(d);
-  document.getElementById("Hour").innerHTML = Math.floor(newH);
-  document.getElementById("Minute").innerHTML = Math.floor(newM);
-  document.getElementById("Second").innerHTML = Math.floor(newS);
+  const addZero = (i) => {
+    if (i < 10) {
+      return (i = "0" + i);
+    }
+    return i;
+  };
+
+  document.getElementById("Day").innerHTML = addZero(Math.floor(d));
+  document.getElementById("Hour").innerHTML = addZero(Math.floor(newH));
+  document.getElementById("Minute").innerHTML = addZero(Math.floor(newM));
+  document.getElementById("Second").innerHTML = addZero(Math.floor(newS));
 }
 
 setInterval(getTime, 1000);
