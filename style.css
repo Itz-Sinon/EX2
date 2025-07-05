@@ -1,5 +1,5 @@
 :root {
-  --base-backgroundcolor: #06080f;
+  --base-backgroundcolor: #06080fdd;
   --base-textcolor: #c8c5c6;
   --base-input-backgroundcolor: #0e1729;
   --base-btn-backgroundcolor:#38bdf8;
@@ -12,11 +12,17 @@
   font-style: normal;
 }
 body {
-    display: grid;
-    grid-template: 35% 65% / 1fr repeat(4, 15%) 1fr;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     background-color: var(--base-backgroundcolor);
     color: var(--base-textcolor);
     font-size: var(--base-textfont);
+}
+#Container {
+    display: grid;
+    grid-template: 35% 65% / 1fr repeat(4, 216px) 1fr;
+    width: 100%;
 }
 #Information {
     grid-area: 1/2/2/6;
@@ -56,9 +62,11 @@ body {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    font-size: 40px;
+    font-size: 200%;
 }
-
+.Box {
+    color: var(--base-btn-backgroundcolor)
+}
 p {
     margin-top: -20px;
 }
